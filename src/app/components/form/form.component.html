@@ -1,5 +1,5 @@
 <form action="">
-    <input type="text" placeholder="Nombre" ([ngModel])="getName">
-    <h1> {{getName | json}} </h1>
-    <input type="text" placeholder="Apellido">
+    <input type="text" placeholder="Nombre" [(ngModel)]="name.nombre" [ngModelOptions]="{standalone: true}">
+    <input type="text" placeholder="Apellido"  [(ngModel)]="name.apellido" [ngModelOptions]="{standalone: true}">
+    <h1> {{ name | json}}</h1>
 </form> 

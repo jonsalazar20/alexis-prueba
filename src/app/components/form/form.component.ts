@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
-  userName : string = ''
-  constructor() { }
-getName(): any {
-  return this.userName
-}
+public name : any
+  constructor() { 
+    this.name = {nombre: '', apellido: ''}
+  }
+
   ngOnInit(): void {
   }
 
